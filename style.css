@@ -7,7 +7,19 @@
 body {
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
 	background-color: #060ab2;
+}
+header {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 10px;
+	/* background: #1c7ccc; */
+	background: #333;
+	color: #fff;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: -50px;
 }
 .memory-game {
 	width: 480px;
@@ -60,4 +72,19 @@ body {
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
+}
+@media (max-width: 600px) {
+	.memory-game {
+		width: 97vw;
+		height: 360px;
+		margin-top: 100px;
+	}
+	.memory-card {
+		width: calc(25% - 6px);
+		height: calc(33.33% - 6px);
+		margin: 3px;
+	}
+	.back-face {
+		padding: 10px;
+	}
 }
